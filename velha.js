@@ -138,6 +138,10 @@ function reiniciar(){
         quadrado.style.background= '#eee';
         quadrado.style.color= '#eee'
         quadrado.innerHTML= '-'
+        let comemoracao=document.getElementById('win');
+        comemoracao.classList.remove('comemorar');
+        comemoracao.classList.add('ncomemorar');
+        
 
     }
     mudarJogador('X')
