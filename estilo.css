@@ -31,3 +31,12 @@ button {
     border-radius: 15px;
     color: #eee;
 }
+.ncomemorar{
+    color: #5a2709e3;
+}
+.comemorar{
+   width: 120px;
+   height: 120px;
+   background: url("winner.gif") ;
+   display: inline-block;
+}

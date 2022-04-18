@@ -31,8 +31,9 @@ function escolherQuadrado(id){
       jogador = 'X'
   
   }
-  mudarJogador(jogador)
+  mudarJogador(jogador);
   checaVencedor();
+  comemora();
 
 }
 
@@ -120,6 +121,15 @@ function checaSequencia(quadrado1, quadrado2, quadrado3){
 
 
 }
+function comemora(){
+    if(vencedor!== null){
+   let comemoracao=document.getElementById('win');
+   comemoracao.classList.remove('ncomemorar');
+   comemoracao.classList.add('comemorar');
+    }
+}
+
+
 function reiniciar(){
     vencedor= null;
     vencedorSelecionado.innerHTML = '';
